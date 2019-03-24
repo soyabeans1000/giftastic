@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+.rating_text{
+	font-size: 0.8em;
+	color:white;
+	float:left;
+	margin:20px;
+}
+body{
+	background-image: url('../images/mall.jpeg');
+}
+.shopping_btn{
+	padding:3px;
+	color:white;
+	background-color:black;
+	margin:5px;
+}
+h1{
+	font-family: 'Rock Salt', cursive;
+}
+.container{
+	width:100vh;
+	background-color: black;
+	width:60vw;
+	border: grey solid 1px;
+}
