@@ -1,3 +1,5 @@
+/* font for header of page */
+
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
 .rating_text{
@@ -6,6 +8,7 @@
 	float:left;
 	margin:20px;
 }
+/* mall background */
 body{
 	background-image: url('../images/mall.jpeg');
 }
