@@ -1,6 +1,3 @@
-//set up toggle for animation
-let toggle = false
-
 //set a few brands
 let itemsArray = ["Gucci", "Prada", "Versace", "Louis Vuitton", "Hermes", "Chanel", "Rolex"]
 
@@ -41,7 +38,7 @@ function displayGifs(word, number) {
                 //set URL of still image
                 gifElem.setAttribute('src', still)
                 gifElem.setAttribute('data-still', still)
-
+                gifElem.setAttribute('data-toggle', 'OFF')
                 //set URL of animated image
                 gifElem.setAttribute('data-animated', animated)
                 gifElem.setAttribute('alt', word)  
@@ -61,25 +58,36 @@ function displayGifs(word, number) {
 
         //if Brand Button clicked
     if (event.target.className === 'btn shopping_btn') {
-        console.log("Inside Event Listener")
+      
         let brand = event.target.getAttribute('brand')
         displayGifs(brand, 10)
 
         //if gif image clicked
     } else if (event.target.className === 'gif_img') {
-        toggle = !toggle
+
+       
         let {
             still,
-            animated
+            animated, toggle
         } = event.target.dataset
-        console.log("Toggle=>" + toggle + "Still=> " + still + "animated=>" + animated)
-        if (toggle) {
+        
+        //Turn On and Off               
+        if (toggle === 'OFF')
+        toggle = 'ON';
+        else 
+        toggle = 'OFF';
+
+        //Image needs to be animated
+        if (toggle === 'ON') {
             event.target.setAttribute('src', animated)
-            console.log("inside toggle true=> " + toggle + "Still=> " + still + "animated=>" + animated)
-        } else {
+           }
+        else {
             event.target.setAttribute('src', still)
-            console.log("Toggle false=> " + toggle + "Still=> " + still + "animated=>" + animated)
         }
+
+        //Set Toggle Attribute of Image 
+        event.target.setAttribute('data-toggle',toggle)   
+
     }
 
     //if Submit Button Clicked
