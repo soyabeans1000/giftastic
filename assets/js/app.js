@@ -33,7 +33,7 @@ function displayGifs(word, number) {
                 let ratingElement = document.createElement('span')
                 ratingElement.className = 'rating_text'
                 let gifElem = document.createElement('img')
-                gifElem.className = "gif_img"
+                gifElem.className = "gif_img img-fluid rounded"
 
                 //set URL of still image
                 gifElem.setAttribute('src', still)
@@ -63,7 +63,7 @@ function displayGifs(word, number) {
         displayGifs(brand, 10)
 
         //if gif image clicked
-    } else if (event.target.className === 'gif_img') {
+    } else if (event.target.className === 'gif_img img-fluid rounded') {
 
        
         let {
