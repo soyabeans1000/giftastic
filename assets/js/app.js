@@ -36,9 +36,9 @@ function displayGifs(word, number) {
                 gifElem.className = "gif_img img-fluid rounded"
 
                 //set URL of still image
-                gifElem.setAttribute('src', still)
+                gifElem.setAttribute('src', animated)
                 gifElem.setAttribute('data-still', still)
-                gifElem.setAttribute('data-toggle', 'OFF')
+                gifElem.setAttribute('data-toggle', 'ON')
                 //set URL of animated image
                 gifElem.setAttribute('data-animated', animated)
                 gifElem.setAttribute('alt', word)  
