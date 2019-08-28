@@ -4,7 +4,7 @@ html{
 	font-size: 14px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
 .rating_text{
 	
@@ -26,8 +26,9 @@ body{
 	font-size:1.5em;
 }
 h1{
-	font-family: 'Rock Salt', cursive;
+	/* font-family: 'Abril Fatfac'; */
 	font-size:3.5em;
+	color: black;
 
 }
 .container{
